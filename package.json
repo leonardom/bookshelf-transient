@@ -1,0 +1,36 @@
+{
+  "name": "bookshelf-transient",
+  "version": "1.0.0",
+  "description": "Specifies that the field is not persistent for your bookshelf models.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "lab --verbose --colors --assert code --ignore __core-js_shared__",
+    "test-cov": "npm test -- -r console -o stdout -r html -o coverage/coverage.html -r lcov -o coverage/lcov.info",
+    "reset": "node -e 'require(\"./test/db\").reset().then(process.exit)'",
+    "knex": "knex --knexfile test/db/knexfile.js",
+    "migrate": "npm run knex -- migrate:latest"
+  },
+  "keywords": [
+    "bookshelf",
+    "knex",
+    "db",
+    "transient"
+  ],
+  "author": "Leonardo Marcelino <leonardo.marcelino@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.get": "^4.3.0"
+  },
+  "devDependencies": {
+    "bcrypt": "^0.8.7",
+    "bookshelf": "^0.10.0",
+    "co": "^4.6.0",
+    "code": "^3.0.2",
+    "knex": "^0.11.10",
+    "lab": "^10.9.0",
+    "sqlite3": "^3.1.4"
+  }
+}
