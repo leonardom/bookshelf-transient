@@ -14,9 +14,9 @@
     "migrate": "npm run knex -- migrate:latest"
   },
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/leonardom/bookshelf-transient.git"
-    },
+    "type": "git",
+    "url": "git+https://github.com/leonardom/bookshelf-transient.git"
+  },
   "keywords": [
     "bookshelf",
     "knex",
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/leonardom/bookshelf-transient#readme",
   "dependencies": {
+    "lodash": "^4.14.2",
     "lodash.get": "^4.3.0"
   },
   "devDependencies": {
