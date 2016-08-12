@@ -13,6 +13,10 @@
     "knex": "knex --knexfile test/db/knexfile.js",
     "migrate": "npm run knex -- migrate:latest"
   },
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/leonardom/bookshelf-transient.git"
+    },
   "keywords": [
     "bookshelf",
     "knex",
@@ -21,6 +25,10 @@
   ],
   "author": "Leonardo Marcelino <leonardo.marcelino@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonardom/bookshelf-transient/issues"
+  },
+  "homepage": "https://github.com/leonardom/bookshelf-transient#readme",
   "dependencies": {
     "lodash.get": "^4.3.0"
   },
