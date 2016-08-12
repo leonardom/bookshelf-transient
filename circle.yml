@@ -2,7 +2,7 @@ machine:
   environment:
     NODE_ENV: test
   node:
-    version: v6.3.1
+    version: v4.3
 test:
   override:
     - npm run test-cov
